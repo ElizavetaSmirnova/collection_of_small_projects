@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: black;
+        }
+
+        .loader{
+            width: 10em;
+            height: 3em;
+            border: 0.3em solid silver;
+            border-radius: 3em;
+            font-size: 20px;
+            border-left-color: hotpink;
+            border-right-color: dodgerblue;
+            position: relative;
+            animation: spin 3s linear infinite;
+        }
+
+        @keyframes spin{
+            to{
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="loader"></div>
+</body>
+</html>
